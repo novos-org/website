@@ -22,5 +22,8 @@ generate_search = true
 # If true, wipes the .build folder every time (recommended for prod)
 clean_output = true
 
+use_syntect = true
+syntax_theme = "InspiredGitHub"
+
 # Options: "expanded" or "compressed"
 sass_style = "compressed"
