@@ -1,3 +1,16 @@
+# Command Line Interface
+novos has various commands. Examples include: "build", "init", and "serve".
+
+`serve` starts a local development server, whilst `build`... well, builds the site.
+
+`init` is unique in a way, you run it once. It scaffolds a entire project, inculding SASS, JavaScript. templates, and includues.
+
+# novos.toml
+`novos.toml` is where you configure you site.
+
+`cat novos.toml`
+
+```toml
 base_url = "https://novos.srclo.net"
 base = ""
 
@@ -24,3 +37,5 @@ clean_output = true
 
 # Options: "expanded" or "compressed"
 sass_style = "compressed"
+
+```
