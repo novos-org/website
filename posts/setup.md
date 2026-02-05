@@ -9,9 +9,22 @@ First off, you need to install novos. You can look at the [installation guide](.
 # Setup
 After you've installed novos, it's time to make a site
 To make a site, use `novos init`.
+
 Setup process:
-```sh
-mkdir site && cd site && novos init
+```bash
+novos init my-website # defaults to . if no arg1
+```
+You will prompted a series of questions:
+
+```text
+✔ What is the URL of your site? · https://example.net
+✔ Site Title · example
+✔ Author Name · Your Name
+✔ Enable RSS generation? · yes
+✔ Build search index? · yes
+✔ Enable Sass compilation? · yes
+✔ Enable syntax highlighting? · no
+✔ Wipe output folder on every build? · yes
 ```
 
 # Learning by Example
@@ -33,7 +46,7 @@ A novos project is designed to be flat and transparent. No hidden magic—just f
 
 # Development Workflow
 Once your site is initialized, you can use the built-in development server to preview changes in real-time:
-```sh
+```bash
 # Build the site and start a local server
 novos serve
 ```
