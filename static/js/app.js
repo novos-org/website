@@ -135,3 +135,36 @@ document.addEventListener('keydown', (e) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (menuBtn && navLinks) {
+    // 1. Toggle Menu
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      
+      menuBtn.setAttribute('aria-expanded', !isExpanded);
+      navLinks.classList.toggle('is-active');
+    });
+
+    // 2. Click Outside to Close
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('is-active') && !navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+        navLinks.classList.remove('is-active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // 3. Close on Escape Key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('is-active')) {
+        navLinks.classList.remove('is-active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+});
