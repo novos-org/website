@@ -1,5 +1,5 @@
 ---
-title: shortcodes
+title: Shortcodes
 date: 2026-02-04
 tags: markup, shortcodes, templates
 ---
