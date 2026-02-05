@@ -1,4 +1,8 @@
-# Command Line Interface
+---
+title: "Command Line Interface"
+date: 2026-02-04
+tags: cli
+---
 novos has various commands. Examples include: "build", "init", and "serve".
 
 `serve` starts a local development server, whilst `build`... well, builds the site.
