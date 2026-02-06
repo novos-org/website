@@ -1,8 +1,8 @@
-+++
-title = "Getting Started"
-date = 2026-02-06
-tags = setup, beginner, tutorial, info
-+++
+---
+title: "Getting Started"
+date: 2026-02-06
+tags: setup, beginner, tutorial, info
+---
 
 ## novos at a glance
 novos is a static site generator (SSG), similar to Hugo, Zola, and Jekyll. It is written in Rust and uses the Tera template engine, which is similar to Jinja2, Django templates, and Liquid.

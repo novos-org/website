@@ -1,10 +1,10 @@
 {% macro theme_button(text="Toggle Dark Mode", class="theme-toggle") %}
-  <button class="{{ class }}" onclick="toggleTheme()">
+  <button onclick="toggleTheme()">
     {{ text }}
   </button>
-  {% endmacro theme_button %}
+{% endmacro theme_button %}
 
-  {% macro search_bar(placeholder="posts") %}
+{% macro search_bar(placeholder="posts") %}
 <div class="flex items-center gap-4">
   <div class="search-area">
     <input

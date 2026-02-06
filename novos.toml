@@ -1,4 +1,4 @@
-base_url = "http://localhost:8080"
+base_url = "https://novos.sh"
 base = ""
 
 posts_dir    = "./posts"
@@ -11,12 +11,13 @@ posts_outdir = "docs/"
 [site]
 title = "novos"
 description = "A fast, minimal static site generater."
-author = "novos contributors"
+author = "contributors"
 generate_rss = true
 generate_search = true
 
 [build]
 clean_output = true
+minify_html = true
 # syntax_theme = "InspiredGitHub"
 syntax_theme_path = "./static/themes/solarnight.tmTheme"
 use_syntect = true
