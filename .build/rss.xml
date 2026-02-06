@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>Novos</title><link>http://localhost:8080</link><description>Build at the speed of thought.</description><item><title>getting-started</title><link>http://localhost:8080/getting-started.html</link><description><![CDATA[## novos at a glance
+novos is a static site generator (SSG), similar to Hugo, Zola, and Jekyll. It is written in Rust and uses the Tera template engine, which is similar to Jinja2, Django templates, and Liquid.
+
+Content is written in [CommonMark](https://commonmark.org/), a strongly defined, highly compatible specification of Markdown.
+
+novos uses pulldown-cmark to parse markup files (Markdown). It (pulldown-cmark) adds a few additional features such as parsing footnotes, Github flavored tables,]]></description><guid>http://localhost:8080/getting-started.html</guid><pubDate>Fri, 6 Feb 2026 18:29:35 +0000</pubDate></item><item><title>shortcodes</title><link>http://localhost:8080/shortcodes.html</link><description><![CDATA[Shortcodes are reusable HTML components stored in your includes/shortcodes/ directory. They allow you to inject complex UI elements into Markdown and templates without writing inline HTML.
+
+# Storage & Naming
+- **Path**: includes/shortcodes/*.html
+- **Naming**: The filename (minus the .html extension) becomes the command name.
+    - **Example**: includes/shortcodes/notice.html is called via <% .notice %>.
+
+# Invocation Syntax
+Shortcodes use a dot-prefix to distinguish them from standard variable]]></description><guid>http://localhost:8080/shortcodes.html</guid><pubDate>Fri, 6 Feb 2026 18:29:35 +0000</pubDate></item><item><title>setup</title><link>http://localhost:8080/setup.html</link><description><![CDATA[First off, you need to install novos. You can look at the [installation guide](./install.html) for refence.
+
+# Setup
+After you've installed novos, it's time to make a site
+To make a site, use `novos init`.
+
+Setup process:
+```bash
+novos init my-website # defaults to . if no arg1
+```
+You will prompted a series of questions:
+
+```text
+✔ What is the URL of your site? · https://example.net
+✔ Site Title · example
+✔ Author Name · Your Name
+✔ Enable RSS generation? · yes
+✔ Build search index? · yes
+✔ Ena]]></description><guid>http://localhost:8080/setup.html</guid><pubDate>Fri, 6 Feb 2026 18:29:35 +0000</pubDate></item><item><title>cli</title><link>http://localhost:8080/cli.html</link><description><![CDATA[novos has various commands. Examples include: "build", "init", and "serve".
+
+`serve` starts a local development server, whilst `build`... well, builds the site.
+
+`init` is unique in a way, you run it once. It scaffolds a entire project, inculding SASS, JavaScript. templates, and includues.
+
+# novos.toml
+`novos.toml` is where you configure you site.
+
+`cat novos.toml`
+
+```toml
+base_url = "https://novos.srclo.net"
+base = ""
+
+posts_dir   = "./posts"
+pages_dir   = "./pages"
+static_dir  = "./static"
+o]]></description><guid>http://localhost:8080/cli.html</guid><pubDate>Fri, 6 Feb 2026 18:29:35 +0000</pubDate></item><item><title>sample</title><link>http://localhost:8080/sample.html</link><description><![CDATA[# Hello, user!
+> This a sample blog post.
+You can edit it by running `$EDITOR posts/sample.md`.
+Or, you can delete it!
+
+Lorem ipsum dolor sit amet?
+
+
+### Filler content
+
+*content*
+**content 2**]]></description><guid>http://localhost:8080/sample.html</guid><pubDate>Fri, 6 Feb 2026 18:29:35 +0000</pubDate></item><item><title>install</title><link>http://localhost:8080/install.html</link><description><![CDATA[There are three primary install methods:
+[GitHub releases](https://github.com/novos-org/novos/releases), [install.sh](https://raw.githubusercontent.com/novos-org/novos/main/install.sh), and `cargo install`.
+
+> Use binary packages to save time when downloading.
+
+
+To install using install.sh, run the following command: (To install globally, you need root permissions.)
+```sh
+curl -s https://raw.githubusercontent.com/novos-org/novos/main/install.sh | sh
+```
+
+To install using `cargo install`: (This i]]></description><guid>http://localhost:8080/install.html</guid><pubDate>Fri, 6 Feb 2026 18:29:35 +0000</pubDate></item><item><title>search</title><link>http://localhost:8080/search.html</link><description><![CDATA[search.json consists of 3 main parts:
+	    The date, slug, a snippet (a few paragraphs), tags, and the title.
+    Below is a snippet of search.json
+
+```json
+[
+  {
+    "date": "2026-02-04",
+    "slug": "shortcodes",
+    "snippet": "Shortcodes are reusable HTML components stored in your includes/shortcodes/ directory. They allow you to inject complex UI elements into Mar",
+    "tags": [
+      "markup",
+      "shortcodes",
+      "templates"
+    ],
+    "title": "shortcodes"
+  },
+  {
+    "date": "202]]></description><guid>http://localhost:8080/search.html</guid><pubDate>Fri, 6 Feb 2026 18:29:35 +0000</pubDate></item></channel></rss>

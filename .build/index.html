@@ -1,6 +1,38 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>novos</title>
+    <link rel="stylesheet" href="http://localhost:8080/css/solarnight.css">
+    <script src="http://localhost:8080/js/app.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <a href="http://localhost:8080/">Home</a>
+        <a href="http://localhost:8080/docs">Documentation</a>
+        <a href="https://github.com/novos-org/novos">GitHub</a>
+    
+<div class="flex items-center gap-4">
+  <div class="search-area">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search posts..."
+      autocomplete="off"
+      aria-label="Search"
+    >
+    <div id="search-results" class="results-dropdown"></div>
+  </div>
+</div>
 
-{% block content %}
+    </nav>
+    <button>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    Switch Appearance
+  </button>
+  </button>
+    <main>
+        
 <section class="hero container py-5 text-center">
     <h1>novos</h1>
 
@@ -34,6 +66,21 @@
 
 	    <h2>documentation</h2>
 
-	    {{ posts }}
+	    <ul class='post-list'>
+  <li> - <a href='docs//getting-started.html'>getting-started</a></li>
+  <li> - <a href='docs//shortcodes.html'>shortcodes</a></li>
+  <li> - <a href='docs//setup.html'>setup</a></li>
+  <li> - <a href='docs//cli.html'>cli</a></li>
+  <li> - <a href='docs//sample.html'>sample</a></li>
+  <li> - <a href='docs//install.html'>install</a></li>
+  <li> - <a href='docs//search.html'>search</a></li>
+</ul>
 	    
-{% endblock content %}
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 xer + novos contributors</p>
+    </footer>
+</body>
+</html>

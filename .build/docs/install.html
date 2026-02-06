@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>novos - install</title>
+    <link rel="stylesheet" href="http://localhost:8080/css/solarnight.css">
+    <script src="http://localhost:8080/js/app.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <a href="http://localhost:8080/">Home</a>
+        <a href="http://localhost:8080/docs">Documentation</a>
+        <a href="https://github.com/novos-org/novos">GitHub</a>
+    
+<div class="flex items-center gap-4">
+  <div class="search-area">
+    <input
+      type="text"
+      id="search-input"
+      placeholder="Search posts..."
+      autocomplete="off"
+      aria-label="Search"
+    >
+    <div id="search-results" class="results-dropdown"></div>
+  </div>
+</div>
+
+    </nav>
+    <button>
+  <button class="theme-toggle" onclick="toggleTheme()">
+    Switch Appearance
+  </button>
+  </button>
+    <main>
+        
+    <article>
+        <h1>install</h1>
+        <time></time>
+        
+        <div class="tags">
+            
+        </div>
+
+        <hr>
+
+        <div class="post-body">
+            <p>There are three primary install methods:
+<a href="https://github.com/novos-org/novos/releases">GitHub releases</a>, <a href="https://raw.githubusercontent.com/novos-org/novos/main/install.sh">install.sh</a>, and <code>cargo install</code>.</p>
+<blockquote>
+<p>Use binary packages to save time when downloading.</p>
+</blockquote>
+<p>To install using install.sh, run the following command: (To install globally, you need root permissions.)</p>
+<pre style="background-color:#191724;">
+<span style="font-style:italic;color:#e0def4;">curl</span><span style="color:#908caa;"> -</span><span style="color:#c4a7e7;">s</span><span style="color:#e0def4;"> https://raw.githubusercontent.com/novos-org/novos/main/install.sh </span><span style="color:#908caa;">| </span><span style="font-style:italic;color:#e0def4;">sh
+</span></pre>
+<p>To install using <code>cargo install</code>: (This installs novos to <code>$HOME/.cargo/bin/novos</code>)</p>
+<pre style="background-color:#191724;">
+<span style="font-style:italic;color:#e0def4;">cargo</span><span style="color:#e0def4;"> install novos
+</span></pre>
+<p>To install via GitHub releases, visit <a href="https://github.com/novos-org/novos/releases">github.com/novos-org/novos/releases</a>  and download the binary for your operating system / archtype.</p>
+
+        </div>
+    </article>
+
+    </main>
+
+    <footer>
+        <p>Copyright 2026 xer + novos contributors</p>
+    </footer>
+</body>
+</html>
