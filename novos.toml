@@ -1,30 +1,23 @@
-base_url = "https://novos.srclo.net"
+base_url = "http://localhost:8080"
 base = ""
 
-posts_dir   = "./posts"
-pages_dir   = "./pages"
-static_dir  = "./static"
-output_dir  = "./.build"
-posts_outdir = "doc"
+posts_dir    = "./posts"
+pages_dir    = "./pages"
+static_dir   = "./static"
+output_dir   = "./.build"
+posts_outdir = "docs/"
 
-template_path      = "./index.html"
-includes_dir       = "./includes"
-view_template_path = "./includes/view_template.html"
 
 [site]
 title = "novos"
-description = "A fast, minimal static site generator."
-author = "novos project"
+description = "A fast, minimal static site generater."
+author = "novos contributors"
 generate_rss = true
 generate_search = true
 
 [build]
-# If true, wipes the .build folder every time (recommended for prod)
 clean_output = true
-
-use_syntect = true
 # syntax_theme = "InspiredGitHub"
-syntax_theme_path = "static/themes/solarnight.tmTheme"
-
-# Options: "expanded" or "compressed"
+syntax_theme_path = "./static/themes/solarnight.tmTheme"
+use_syntect = false
 sass_style = "compressed"

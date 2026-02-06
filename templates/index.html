@@ -1,8 +1,9 @@
-{% set title = home %}
+{% extends "base.html" %}
 
+{% block content %}
 <section class="hero container py-5 text-center">
     <h1>novos</h1>
-    
+
     <div style="display: flex; justify-content: center;">
 
       <img src="/favicon.svg" alt="novos logo" width="250" height="250">
@@ -24,12 +25,11 @@
             </div>
             <p class="meta-links">
                 <small class="italic">
-                    (or via <a href="https://github.com/novos-org/novos/releases">github releases</a>, 
+                    (or via <a href="https://github.com/novos-org/novos/releases">github releases</a>,
                     <a href="https://raw.githubusercontent.com/novos-org/novos/main/install.sh">install.sh</a>)
-		    <br>
-		    (<a href="/doc/install">install guide</a>)
+                    <br>
+                    (<a href="/doc/install">install guide</a>)
                 </small>
             </p>
-        </div>
-    </div>
-</section>
+	    
+{% endblock content %}
