@@ -23,7 +23,8 @@ generate_search = true
 clean_output = true
 
 use_syntect = true
-syntax_theme = "InspiredGitHub"
+# syntax_theme = "InspiredGitHub"
+syntax_theme_path = "static/themes/solarnight.tmTheme"
 
 # Options: "expanded" or "compressed"
 sass_style = "compressed"
