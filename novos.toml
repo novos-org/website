@@ -1,4 +1,5 @@
-base_url = "https://novos.sh"
+# base_url = "https://novos.sh"
+base_url = "http://localhost:8080"
 base = ""
 
 posts_dir    = "./posts"
