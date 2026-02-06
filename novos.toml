@@ -19,5 +19,5 @@ generate_search = true
 clean_output = true
 # syntax_theme = "InspiredGitHub"
 syntax_theme_path = "./static/themes/solarnight.tmTheme"
-use_syntect = false
+use_syntect = true
 sass_style = "compressed"
