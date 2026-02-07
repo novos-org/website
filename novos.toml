@@ -18,7 +18,7 @@ generate_search = true
 
 [build]
 clean_output = true
-minify_html = true
+minify_html = false
 # syntax_theme = "InspiredGitHub"
 syntax_theme_path = "./static/themes/solarnight.tmTheme"
 use_syntect = true
