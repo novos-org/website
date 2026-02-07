@@ -4,15 +4,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ site_title }}{% block title %}{% endblock %}</title>
-    <link rel="icon" href="{{ base_url }}/favicon.svg" type="image/svg+xml">
-    <link rel="icon" type="image/png" href="{{ base_url }}/favicon.png">
-    <link rel="stylesheet" href="{{ base_url }}/css/solarnight.css">
-    <script type="module" src="{{ base_url }}/js/app.js" defer></script>
+    <title>{{ config.site.title }}{% block title %}{% endblock %}</title>
+    <link rel="icon" href="{{ config.base_url }}/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" href="{{ config.base_url }}/favicon.png">
+    <link rel="stylesheet" href="{{ config.base_url }}/css/solarnight.css">
+    <script type="module" src="{{ config.base_url }}/js/app.js" defer></script>
 </head>
 <body>
     <nav class="nav">
-        <a href="{{ base_url }}/">home + docs </a>
+        <a href="{{ config.base_url }}/">home + docs </a>
         <a href="https://github.com/novos-org/novos"> GitHub </a>
     </nav>
     {{ ui::theme_button(text="Switch Appearance") }}
