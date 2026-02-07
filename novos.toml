@@ -1,9 +1,9 @@
 base_url = "https://novos.sh"
 # base_url = "http://localhost:8080"
 base = ""
+theme = "solarnight"
 
 posts_dir    = "./posts"
-pages_dir    = "./pages"
 static_dir   = "./static"
 output_dir   = "./.build"
 posts_outdir = "docs/"

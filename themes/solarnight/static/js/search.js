@@ -75,7 +75,7 @@ function performSearch(query) {
   } else {
     resultsContainer.innerHTML = scoredMatches.map(post => `
       <div class="search-entry">
-        <a href="/docs/${post.slug}">${post.title}</a>
+        <a href="/posts/${post.slug}">${post.title}</a>
         <small>${post.date} ${post.score > 80 ? '*' : ''}</small>
         <p>${post.snippet?.substring(0, 80)}...</p>
       </div>

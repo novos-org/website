@@ -10,8 +10,7 @@
 </head>
 <body>
     <nav>
-        <a href="{{ config.base_url }}/">Home + Docs </a>
-        <a href="https://github.com/novos-org/novos"> GitHub </a>
+        <a href="{{ config.base_url }}/">Home</a>
     {{ ui::search_bar() }}
     </nav>
    {{ ui::theme_button(text="Switch Appearance") }}
@@ -20,7 +19,7 @@
     </main>
 
     <footer>
-        <p>Copyright xer & {{ config.site.author }}</p>
+        <p>Copyright {{ config.site.author }}</p>
     </footer>
 </body>
 </html>

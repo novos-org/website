@@ -8,9 +8,8 @@
         <time>{{ post.date }}</time>
         
         <div class="tags">
-	  <h4 style="text-align: left;">Tags:</h4>
             {% for tag in post.tags %}
-                <span class="tag">#{{ tag }}  </span> 
+                <span class="tag">#{{ tag }}</span>
             {% endfor %}
         </div>
 
