@@ -1,5 +1,5 @@
-# base_url = "https://novos.sh"
-base_url = "http://localhost:8080"
+base_url = "https://novos.sh"
+# base_url = "http://localhost:8080"
 base = ""
 
 posts_dir    = "./posts"
@@ -23,3 +23,4 @@ minify_html = true
 syntax_theme_path = "./static/themes/solarnight.tmTheme"
 use_syntect = true
 sass_style = "compressed"
+convert_to_webp = true
