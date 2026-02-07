@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="taxonomy-header">
+        <h1>Posts tagged with: <span class="tag-name">#{{ tag }}</span></h1>
+        <p class="post-count">Showing {{ posts | length }} posts</p>
+        <a href="{{ config.base_url }}/" class="back-link">Return</a>
+    </div>
+
+    <hr class="taxonomy-divider">
+
+    <div class="post-feed">
+        {% for post in posts %}
+            <article class="post-preview">
+                <h2><a href="{{ config.base_url }}/{{ posts.outdir }}{{ post.slug }}.html">{{ post.title }}</a></h2>
+                <time>{{ post.date | date(format="%Y-%m-%d") }}</time>
+                <p>{{ post.description }}</p>
+            </article>
+        {% else %}
+            <p>No posts found for this tag.</p>
+        {% endfor %}
+    </div>
+{% endblock content %}
